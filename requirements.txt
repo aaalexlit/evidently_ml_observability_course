@@ -2,3 +2,6 @@ evidently
 scikit-learn
 scipy
 pillow
+jupyter
+ipykernel
+jupyter_server==2.8.0
