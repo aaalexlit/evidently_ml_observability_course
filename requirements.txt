@@ -5,3 +5,4 @@ pillow
 jupyter
 ipykernel
 jupyter_server==2.8.0
+prefect
