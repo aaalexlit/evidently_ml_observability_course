@@ -5,3 +5,6 @@
 __pycache__
 
 *.pckl
+
+/airflow/logs
+
