@@ -1,0 +1,264 @@
+{
+  "check_interval": 1,
+  "collectors": {
+    "default_test": {
+      "id": "default_test",
+      "trigger": {
+        "type": "evidently.collector.config.IntervalTrigger",
+        "interval": 5.0,
+        "last_triggered": 0.0
+      },
+      "report_config": {
+        "metrics": [],
+        "tests": [
+          {
+            "lt": 0.3,
+            "type": "evidently.tests.data_drift_tests.TestShareOfDriftedColumns",
+            "is_critical": true
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V3",
+              "display_name": "V3",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V4",
+              "display_name": "V4",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V16",
+              "display_name": "V16",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V9",
+              "display_name": "V9",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "Class",
+              "display_name": "Class",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V5",
+              "display_name": "V5",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V11",
+              "display_name": "V11",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V8",
+              "display_name": "V8",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V7",
+              "display_name": "V7",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V2",
+              "display_name": "V2",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V13",
+              "display_name": "V13",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V10",
+              "display_name": "V10",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V12",
+              "display_name": "V12",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V1",
+              "display_name": "V1",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V6",
+              "display_name": "V6",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V14",
+              "display_name": "V14",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          },
+          {
+            "type": "evidently.tests.data_drift_tests.TestColumnDrift",
+            "is_critical": true,
+            "column_name": {
+              "type": "evidently.base_metric.ColumnName",
+              "name": "V15",
+              "display_name": "V15",
+              "dataset": "main",
+              "feature_class": null
+            },
+            "stattest": null,
+            "stattest_threshold": null
+          }
+        ],
+        "options": {
+          "color": null,
+          "render": null,
+          "custom": {}
+        },
+        "metadata": {
+          "test_presets": [
+            "DataDriftTestPreset"
+          ]
+        },
+        "tags": []
+      },
+      "reference_path": "default_test_reference.parquet",
+      "project_id": "3a3dee6a-9d88-4363-9341-3e245458286c",
+      "api_url": "http://localhost:8000",
+      "api_secret": null,
+      "cache_reference": true
+    }
+  },
+  "storage": {
+    "type": "evidently.collector.storage.InMemoryStorage",
+    "max_log_events": 10
+  }
+}

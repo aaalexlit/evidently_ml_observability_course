@@ -11,3 +11,5 @@ __pycache__
 *.db
 
 /bank_data
+
+*.parquet
